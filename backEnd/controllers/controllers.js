@@ -29,7 +29,7 @@ exports.updating=(req,res,next)=>{
       console.log('Updated product')
       res.json(result);
     })
-    .catch(err=>console.log(err))
+    .catch(err=>console.log(err));
   
 }
 
@@ -42,7 +42,7 @@ exports.deleting=(req,res,next)=>{
       })
       .then(result=>{
         console.log('Destroyed product')
-        res.json(result)
+        res.json(result);
       })
       .catch(err=>console.log(err))
 }

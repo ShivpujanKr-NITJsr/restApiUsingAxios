@@ -96,7 +96,7 @@ function createBuyButton(obj, quantityToBuy) {
     return button;
 }
 
-function showUpdatedOnScreen(obj) {
+function showUpdatedOnScreen(obj)  {
    
     const children =document.getElementById(obj.id);
     children.innerHTML = `${obj.itemname}     ${obj.description}    ${obj.price}rs   <h5><b>${obj.quantity}</b></h5>`;

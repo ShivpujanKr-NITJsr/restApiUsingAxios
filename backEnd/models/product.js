@@ -21,6 +21,6 @@ const Product=sequelize.define('Product',{
     quantity:{
         type:Sequelize.Sequelize.INTEGER
     }
-})
+});
 
 module.exports=Product;
