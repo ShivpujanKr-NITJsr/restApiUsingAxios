@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="container border rounded-3 p-4 mt-2 border border-5 border-black ">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <div class="container text-center align-content-center p-1 mt-4 rounded-3 bg-primary">
+        <h1 >Inventory Management App</h1>
+        <form class="form form-control p-4" onsubmit="saveToMyBackend(event)">
+        
+            <div style="margin: 10px;">
+    
+                <label for="itemname">Item Name</label>
+                <input type="text" style="margin: 10px;" name="itemname" id="itemname">
+                <label for="description">Description</label>
+                <input type="text"  style="margin: 10px;" name="description" id="description">
+                <label for="price">Price</label>
+                <input type="number"  name="price" id="price">
+                <label for="quantity">Quantity</label>
+                <input type="number" name="quantity" id="quantity">
+    
+                <button type="submit" class="btn-success rounded-1 border-danger"> Add Item</button>
+    
+            </div>
+        
+        </form>
+
+    </div>
+    
+    
+
+    <ul id="listOfItems" class="container align-content-center p-1 mt-5 rounded-3 " ></ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+    <script src="main.js"></script>
+</body>
+</html>
